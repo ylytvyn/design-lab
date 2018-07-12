@@ -1,0 +1,100 @@
+:root {
+	--color: #3c3c3c;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+	transition: all .3s ease-in-out;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+}
+
+.clear::after, .clear::before {
+	content: " ";
+	display: table;
+}
+
+.clear::after {
+	clear: both;
+}
+
+/* Main Styles */
+html {
+	height: 100%;
+}
+
+body {
+	font: 16px 'Lato', sans-serif;
+	color: var(--color);
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.header {
+	height: 100vh;
+	min-height: 950px;
+	background: url('../images/hero-bg.jpg') no-repeat top center;
+	color: #fff;
+	padding: 285px 0 115px;
+}
+
+.header__container {
+	height: 100%;
+	text-align: center;
+	position: relative;
+}
+
+.logo {
+	margin-bottom: 80px;
+	display: inline-block;
+}
+
+.logo__img {
+	width: 67px;
+}
+
+.logo__img:hover {
+	transform: scale(1.2);
+}
+
+.header__title {
+	font-weight: 700;
+	font-size: 54px;
+	letter-spacing: 1.6px;
+	text-transform: uppercase;
+	margin-bottom: 35px;
+}
+
+.header__description {
+	line-height: 29px;
+	letter-spacing: .6px;
+	text-transform: uppercase;
+}
+
+.header__scroll {
+	font-size: 40px;
+	cursor: pointer;
+	position: absolute;
+	bottom: 0;
+	left: calc(50% - 12px);
+}
+
+.header__scroll:hover {
+	color: var(--color);
+}
